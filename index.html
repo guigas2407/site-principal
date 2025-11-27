@@ -10,6 +10,13 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        margin: 0;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: 0.2s linear;
+        font-family: 'Roboto', sans-serif;
       }
 
       body {
@@ -308,6 +315,29 @@
         color: var(--primary);
       }
 
+      .projetos-curriculo {
+        width: 500px;
+      }
+
+      .projetos ul {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+
+         li {
+          margin-bottom: 10px;
+          background: #57c78691;
+          border-radius: 5px;
+          box-shadow: #6d6c6cc7 0px 0px 10px;
+          color: var(--primary);
+         }
+
+         li:hover {
+          background: #57c785;
+         }
+      }
+
       /* ===== Responsividade ===== */
       @media (max-width: 900px) {
         .container-curriculo {
@@ -329,55 +359,7 @@
       <ul>
         <li><a href="#">Início</a></li>
         <li><a href="#curriculo">Quem sou eu?</a></li>
-        <li>
-          <a href="#">Aulas</a>
-          <ul>
-            <li>
-              <a href="http://127.0.0.1:5500/resumo/YPyjaLQ.htm"
-                >Resumo do curso</a
-              >
-            </li>
-            <li>
-              <a
-                href="http://127.0.0.1:5500/tabela-brasileirao/tabelaBrasileirao.htm"
-                >Tabela Brasileirão</a
-              >
-            </li>
-            <li>
-              <a href="http://127.0.0.1:5500/form/forms.html"
-                >Formulário odontológico</a
-              >
-            </li>
-            <li><a href="https://guilherme-meyer.netlify.app/">Cards</a></li>
-            <li>
-              <a href="http://127.0.0.1:5501/index.html/">PetShop</a>
-            </li>
-            <li>
-              <a href="https://guigas2407.github.io/GameTech/">GameTech</a>
-            </li>
-            <li>
-              <a
-                href="https://guigas2407.github.io/desenvolvimento-de-interfaces/"
-                >Tabela periódica</a
-              >
-            </li>
-            <li>
-              <a href="https://guigas2407.github.io/fotografo/">Fotografo</a>
-            </li>
-            <li>
-              <a href="https://guigas2407.github.io/hotelFazenda/">Brasília resort hotel fazenda</a>
-            </li>
-            <li>
-              <a href="https://guigas2407.github.io/curriculo/">Currículo pessoal</a>
-            </li>
-            <li>
-              <a href="https://guigas2407.github.io/cesar-lattes/">César Lattes</a>
-            </li>
-            <li>
-              <a href="https://guigas2407.github.io/biblioteca/">Biblioteca</a>
-            </li>
-          </ul>
-        </li>
+        <li><a href="#curriculo">Aulas</a></li>
         <li>
           <a href="#">Contatos</a>
           <ul>
@@ -475,6 +457,74 @@
             </div>
           </section>
         </div>
+        <section class="section-curriculo projetos-curriculo">
+          <div>
+            <h2>Meus Projetos Recentes</h2>
+            <p>
+              Explore meus projetos mais recentes, desde sites interativos até
+              aplicações web completas. Cada projeto reflete meu crescimento e
+              aprendizado contínuo na área de desenvolvimento web.
+            </p>
+          </div>
+          <div class="projetos">
+            <ul style="list-style: none; padding-left: 0">
+              <li>
+                <a href="http://127.0.0.1:5500/resumo/YPyjaLQ.html"
+                  >Resumo do curso</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://127.0.0.1:5500/tabela-brasileirao/tabelaBrasileirao.html"
+                  >Tabela Brasileirão</a
+                >
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5500/form/forms.html"
+                  >Formulário odontológico</a
+                >
+              </li>
+              <li>
+                <a href="https://guilherme-meyer.netlify.app/">Cards</a>
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5501/index.html/">PetShop</a>
+              </li>
+              <li>
+                <a href="https://guigas2407.github.io/GameTech/">GameTech</a>
+              </li>
+              <li>
+                <a
+                  href="https://guigas2407.github.io/desenvolvimento-de-interfaces/"
+                  >Tabela periódica</a
+                >
+              </li>
+              <li>
+                <a href="https://guigas2407.github.io/fotografo/">Fotografo</a>
+              </li>
+              <li>
+                <a href="https://guigas2407.github.io/hotelFazenda/"
+                  >Brasília resort hotel fazenda</a
+                >
+              </li>
+              <li>
+                <a href="https://guigas2407.github.io/curriculo/"
+                  >Currículo pessoal</a
+                >
+              </li>
+              <li>
+                <a href="https://guigas2407.github.io/cesar-lattes/"
+                  >César Lattes</a
+                >
+              </li>
+              <li>
+                <a href="https://guigas2407.github.io/biblioteca/"
+                  >Biblioteca</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
       </content>
     </main>
 
